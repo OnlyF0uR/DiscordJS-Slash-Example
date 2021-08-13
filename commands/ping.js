@@ -14,7 +14,7 @@ const execute = async function(client, interaction) {
  * Another cool thing you can do is this:
  *
  * module.exports.buttonActions = [
- * 	{ id = '', onClick = async function() {} }
+ * 	{ id = 'custom_id', onClick = async function(client, interaction) {} }
  * ]
  *
  * This allows you to keep the button actions for each command in the command class.
