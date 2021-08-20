@@ -1,5 +1,5 @@
 module.exports = {
-	botToken: '',
-	devMode: true,
-	devGuild: ''
+    botToken: '',
+    devMode: true,
+    devGuild: ''
 }

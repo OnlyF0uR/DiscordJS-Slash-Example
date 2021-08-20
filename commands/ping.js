@@ -3,8 +3,8 @@ const { SlashCommandBuilder } = require('@discordjs/builders')
 
 // ================================
 const data = new SlashCommandBuilder()
-	.setName('ping')
-	.setDescription('Receive pong.')
+    .setName('ping')
+    .setDescription('Receive pong.')
 
 const execute = async function(client, interaction) {
     await interaction.reply('Pong!')
@@ -14,7 +14,7 @@ const execute = async function(client, interaction) {
  * Another cool thing you can do is this:
  *
  * module.exports.buttonActions = [
- * 	{ id = 'custom_id', onClick = async function(client, interaction) {} }
+ *  { id = 'custom_id', onClick = async function(client, interaction) {} }
  * ]
  *
  * This allows you to keep the button actions for each command in the command class.
@@ -24,8 +24,8 @@ const execute = async function(client, interaction) {
 
 // ================================
 module.exports.command = {
-	permLevel: 0,
+    permLevel: 0,
 
-	data: data,
-	execute: execute
+    data: data,
+    execute: execute
 }
