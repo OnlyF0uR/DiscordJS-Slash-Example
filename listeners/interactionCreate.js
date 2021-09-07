@@ -16,7 +16,7 @@ module.exports = async function(client, interaction) {
                     interaction.reply('You need to have the `ADMINISTRATOR` permission to use this command.')
                     return
                 }
-            } else if (obj.permLevel == 3) { // This probably only be used counter bug-abuse
+            } else if (obj.permLevel == 3) { // This probably only be used to counter bug-abuse
                 if (!interaction.member.id !== config.devId) {
                     interaction.reply('Only the developer of this bot can use that command.')
                     return
