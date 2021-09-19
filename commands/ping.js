@@ -13,13 +13,15 @@ const execute = async function(client, interaction) {
 /*
  * Another cool thing you can do is this:
  *
- * module.exports.buttonActions = [
+ * const buttonActions = [
  *  { id = 'custom_id', onClick = async function(client, interaction) {} }
  * ]
  *
  * This allows you to keep the button actions for each command in the command class.
  * So if someones presses a button you created then it will lead back to this class and
  * ~ the code you specified here (with that button id) will be ran.
+ *
+ * Be sure to include 'buttons: buttonActions', within the module.exports at the bottom of the file.
  */
 
 // ================================
@@ -27,5 +29,6 @@ module.exports.command = {
     permLevel: 0,
 
     data: data,
-    execute: execute
+    execute: execute,
+    // buttons: buttonActions
 }
