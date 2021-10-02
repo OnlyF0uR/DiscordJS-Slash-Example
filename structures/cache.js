@@ -1,7 +1,7 @@
 // ================================
 module.exports.botCache = {
     commands: new Map(),
-    interactions: new Map()
+    buttons: new Map()
 }
 
 // ================================
