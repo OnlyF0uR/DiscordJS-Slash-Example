@@ -26,9 +26,9 @@ module.exports = async function(client, interaction) {
             obj.execute(client, interaction)
         }
     } else if (interaction.isMessageComponent() && interaction.componentType === 'BUTTON') {
-        if (botCache.interactions.has(interaction.customID)) {
+        if (botCache.buttons.has(interaction.customID)) {
             // This runs the button function that's stored in the botCache, see the ping command file for an example
-            botCache.interactions.get(interaction.customID)(client, interaction)
+            botCache.buttons.get(interaction.customID)(client, interaction)
         }
     }
 }
