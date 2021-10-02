@@ -24,7 +24,7 @@ async function registerCommands(client) {
         botCache.commands.set(file.split('.')[0], cmdFile.command)
         if (cmdFile.buttons != null) {
             for (let i = 0; i < cmdFile.buttons.length; i++) {
-                botCache.buttonActions.set(cmdFile.buttons[i].id, cmdFile.buttons[i].onClick)
+                botCache.interactions.set(cmdFile.buttons[i].id, cmdFile.buttons[i].onClick)
             }
         }
 
