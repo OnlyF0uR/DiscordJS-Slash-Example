@@ -9,7 +9,6 @@ const rest = new REST({ version: '9' }).setToken(config.botToken);
 
 // ================================
 module.exports = async function (client) {
-    // Register the commands
     await registerCommands(client)
     console.log('Started.')
 }

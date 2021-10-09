@@ -5,4 +5,4 @@ module.exports.botCache = {
 }
 
 // ================================
-// TODO: You can implement your own caching (for example redis) function's here
+// NOTE: You can implement your own caching (for example redis) function's here

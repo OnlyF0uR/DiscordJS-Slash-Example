@@ -10,7 +10,8 @@ const execute = async function(client, interaction) {
     await interaction.reply('Pong!')
 }
 
-/*
+/* NOTE:
+ *
  * Another cool thing you can do is this:
  *
  * module.exports.buttons = [
@@ -24,8 +25,6 @@ const execute = async function(client, interaction) {
 
 // ================================
 module.exports.command = {
-    permLevel: 0,
-
     data: data,
     execute: execute
 }
